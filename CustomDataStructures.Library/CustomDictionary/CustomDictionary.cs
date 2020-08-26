@@ -25,7 +25,7 @@ namespace CustomDataStructures.Library
                         int newIndex = item.GetHashCode() % newStorage.Length;
                         newStorage[newIndex] = new List<CustomKeyValuePair<TKey, TValue>>
                         {
-                            new CustomKeyValuePair<TKey, TValue>(key, value)
+                            new CustomKeyValuePair<TKey, TValue>(item.Key, item.Value)
                         };
                     }
                 }
